@@ -1,0 +1,358 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+img {
+  width: 16rem;
+}
+
+.container {
+  background-color: #242424;
+  width: min(100%, 95rem);
+  border: 1px solid #363636;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+header {
+  position: relative;
+  padding: 4.1rem;
+  border-bottom: 1px solid #363636;
+}
+
+header::before {
+  content: '';
+  background-image: url('/src/img/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.container-header {
+  display: flex;
+  justify-content: center;
+  padding: 4.1rem 0 4.1rem 0;
+  border-radius: 5px;
+  background: rgba(36, 36, 36, 0.75);
+  backdrop-filter: blur(6px);
+  border: 1px solid #363636;
+}
+
+.profile-picture img {
+  border: 5px solid #363636;
+  border-radius: 50%;
+}
+
+.header-items {
+  padding: 0 3rem 0 3rem;
+}
+
+.profile-info,
+.profile-contact {
+  border-left: 1px solid #363636;
+}
+
+.profile-info-name {
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.profile-info-name span {
+  font-weight: 700;
+}
+
+.profile-info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 2rem;
+  font-size: 1.3rem;
+}
+
+.profile-info-work {
+  font-size: 1.8rem;
+  opacity: 0.65;
+}
+
+.profile-info-study {
+  opacity: 0.4;
+}
+
+.profile-info-birthday {
+  opacity: 0.4;
+}
+
+.profile-group h2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+.profile-info-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 3.5rem;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+.profile-info-groups p span {
+  font-weight: 700;
+}
+
+.content-group {
+  padding: 5rem 4rem 5rem 4rem;
+  color: #dddddd;
+  border-bottom: 1px solid #363636;
+}
+
+.content-group.side {
+  padding-right: 0;
+}
+
+.content-group:last-child {
+  border: 0;
+}
+
+.content-group .content-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+
+.studies {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.study {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 1.6rem;
+}
+
+.study-title {
+  font-weight: 700;
+}
+
+.study-school {
+  font-weight: 200;
+}
+
+.content {
+  display: flex;
+}
+
+.content-main {
+  border-left: 1px solid #363636;
+  flex-grow: 7;
+}
+
+.content-sidebar {
+  flex-grow: 1;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.project {
+  flex-grow: 1;
+  background: #303030;
+  border-radius: 5px;
+  border: 1px solid #363636;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+  background: #363636;
+}
+
+.project-header {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('/src/img/proyecto.jpg');
+
+  background-position: center;
+  background-size: cover;
+
+  height: 150px;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 2rem;
+}
+
+.project-stack {
+  padding: 1rem;
+}
+
+.project-stack h5 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.project-stack p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.work-title {
+  font-weight: 700;
+}
+
+.work-company {
+  font-weight: 200;
+}
+
+.work-company span {
+  font-weight: 700;
+}
+
+.work-description {
+  font-size: 1.6rem;
+}
+
+.header-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 865px) {
+  .container-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .profile-picture {
+    display: flex;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-right: 1px solid #363636;
+  }
+
+  .profile-picture img {
+    width: 220px;
+  }
+
+  .profile-info-groups {
+    margin-top: 1.5rem;
+  }
+
+  .profile-info,
+  .profile-contact {
+    border: 0;
+  }
+
+  .profile-contact {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-picture {
+    border: 0;
+  }
+
+  .profile-picture img {
+    width: 18rem;
+  }
+
+  .profile-contact {
+    padding: 0;
+  }
+
+  .header-items {
+    padding: 2rem;
+  }
+
+  .header-items:nth-child(1),
+  .header-items:nth-child(2) {
+    border-bottom: 1px solid #363636;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .side:last-child {
+    border-bottom: 1px solid #363636;
+  }
+
+  .content-main {
+    border: 0;
+  }
+}
